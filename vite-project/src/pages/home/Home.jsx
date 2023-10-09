@@ -5,6 +5,7 @@ import Filter from "../../components/filter/Filter";
 import ProductCard from "../../components/productcard/ProductCard";
 import Track from "../../components/track/Track";
 import Testimonial from "../../components/testimonial/Testimonial";
+import BannerSecton from "../../components/bannersection/BannerSection";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 
@@ -94,6 +95,7 @@ function Home() {
 
   return (
     <Layout>
+      <BannerSecton/>
       <Filter
         categoryFilter={categoryFilter}
         setCategoryFilter={setCategoryFilter}
